@@ -2,7 +2,7 @@
 
 1. Mise à jour.
 
-	`sudo apt update` 
+	`sudo apt update`  
 	`sudo apt upgrade`
 
 2. Installer usb-modeswitch
@@ -57,9 +57,9 @@ HuaweiNewMode=1  `
 5. Pour l'executer au demarrage:
 
  
-	`cd /etc/xdg/lxsession/LXDE-pi/
+	`cd /etc/xdg/lxsession/LXDE-pi/`
 
-	sudo nano autostart`
+	`sudo nano autostart`
 
 ajouter:
 
