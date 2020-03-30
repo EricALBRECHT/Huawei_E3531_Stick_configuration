@@ -13,10 +13,10 @@
 
 	`sudo nano 12d1:1f01`
 
-y coller le contenu suivant:
-plusieurs modes sont disponnibles, seul le dernier nous interesse.
+y coller le contenu suivant:  
+Plusieurs modes sont disponnibles, seul le dernier nous interesse.
 
-@
+
 #Huawei E3531i-2 switch mode vers 12d1:1001 (mode GSM modem, 3 ports)  
 #TargetVendor=0x12d1  
 #Targetproduct=0x1f01  
@@ -42,7 +42,7 @@ DefaultVendor= 0x12d1
 DefaultProduct=0x157d  
 TargetVendor=0x12d1  
 TargetProductList="14db,14dc"  
-HuaweiNewMode=1  @
+HuaweiNewMode=1  
 
 
 4. __Pour basculer la clef__ 
@@ -77,7 +77,7 @@ ajouter:
 
 1. __Configurer la clef USB Huawei 3531 en mode ethernet.__
 
-	telecharger sendSMS.sh, token.sh, session.sh (a conserver ensemble)
+	telecharger __sendSMS.sh, token.sh, session.sh__ (a conserver ensemble)
 
 2. __Utilisation:__
 
