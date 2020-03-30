@@ -1,8 +1,17 @@
-Installer usb-modeswitch
+Pour Rasbian/Debian:
+
+Procedure d'installation d'un Stick 3G Huawei.
+
+1.
+
+sudo apt update
+sudo apt upgrade
+
+2. Installer usb-modeswitch
 
 apt-get install ppp usb-modeswitch usb-modeswitch-data
 
-Creer un fichier nomé "12d1:1f01" dans /etc/usb_modeswitch.d
+3. Creer un fichier nomé "12d1:1f01" dans /etc/usb_modeswitch.d
 
 sudo nano 12d1:1f01
 
@@ -37,14 +46,15 @@ TargetProductList="14db,14dc"
 HuaweiNewMode=1
 
 
-Pour basculer la clef manuellement: 
+4. Pour basculer la clef manuellement: 
+
 usb_modeswitch -c /etc/usb_modeswitch.d/12d1:1f01
 
-automatiquement a l'aide du script:
+4-1. automatiquement a l'aide du script:
 
 start_huawei.sh  (le rendre executable avant si besoin "sudo chmod +x start_huawei.sh")
 
-pour l'executer au demarrage:
+5.Pour l'executer au demarrage:
 
  
 cd /etc/xdg/lxsession/LXDE-pi/
@@ -55,8 +65,20 @@ ajouter:
 
 @/home/pi/start_huawei.sh (adapter le chemin a la config)
 
-Pour verifier que la clef a bien changé de mode:
+6. Pour verifier que la clef a bien changé de mode:
 
 lsusb
 
 => Bus 001 Device 015: ID 12d1:14dc Huawei Technologies Co., Ltd.HSPA +, USB, HSUPA, Edge/GPRS, Modem/Networkcard
+
+
+Enoyer des sms:
+
+1. Configurer la clef USB Huawei 3531 en mode ethernet.
+
+telecharger sendSMS.sh, token.sh, session.sh (a conserver ensemble)
+
+2. Utilisation:
+
+sudo ./sendSMS "Numero de tel" "message"
+
