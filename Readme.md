@@ -81,5 +81,7 @@ ajouter:
 
 2. __Utilisation:__
 
-	`sudo ./sendSMS "Numero de tel" "message"`
-        ex `sudo ./sendSMS "0605040302" "Hello Wold"`
+	`sudo ./sendSMS "Numero de tel" "message"`  
+        
+	exempe:  
+	 `sudo ./sendSMS "0605040302" "Hello Wold"`  
