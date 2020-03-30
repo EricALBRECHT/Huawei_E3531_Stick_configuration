@@ -2,22 +2,22 @@
 
 1. Mise à jour.
 
-	sudo apt update  
-	sudo apt upgrade
+	`sudo apt update` 
+	`sudo apt upgrade`
 
 2. Installer usb-modeswitch
 
-	apt-get install ppp usb-modeswitch usb-modeswitch-data
+	`apt-get install ppp usb-modeswitch usb-modeswitch-data`
 
 3. Creer un fichier nomé "12d1:1f01" dans /etc/usb_modeswitch.d
 
-	sudo nano 12d1:1f01
+	`sudo nano 12d1:1f01`
 
 y coller le contenu suivant:
 plusieurs modes sont disponnibles, seul le dernier nous interesse.
 
 
-#Huawei E3531i-2 switch mode vers 12d1:1001 (mode GSM modem, 3 ports)  
+`#Huawei E3531i-2 switch mode vers 12d1:1001 (mode GSM modem, 3 ports)  
 #TargetVendor=0x12d1  
 #Targetproduct=0x1f01  
 #DefaultVendor= 0x12d1  
@@ -42,7 +42,7 @@ DefaultVendor= 0x12d1
 DefaultProduct=0x157d  
 TargetVendor=0x12d1  
 TargetProductList="14db,14dc"  
-HuaweiNewMode=1  
+HuaweiNewMode=1  `
 
 
 4. Pour basculer la clef 
@@ -52,22 +52,22 @@ HuaweiNewMode=1
 
 * automatiquement a l'aide du script:
 
-	start_huawei.sh  (le rendre executable avant si besoin "sudo chmod +x start_huawei.sh")
+	`start_huawei.sh  (le rendre executable avant si besoin "sudo chmod +x start_huawei.sh")`
 
 5. Pour l'executer au demarrage:
 
  
-	cd /etc/xdg/lxsession/LXDE-pi/
+	`cd /etc/xdg/lxsession/LXDE-pi/
 
-	sudo nano autostart
+	sudo nano autostart`
 
 ajouter:
 
-	@/home/pi/start_huawei.sh (adapter le chemin a la config)
+	`@/home/pi/start_huawei.sh (adapter le chemin a la config)`
 
 6. Pour verifier que la clef a bien changé de mode:
 
-	lsusb
+	`lsusb`
 
 => Bus 001 Device 015: ID 12d1:14dc Huawei Technologies Co., Ltd.HSPA +, USB, HSUPA, Edge/GPRS, Modem/Networkcard
 
@@ -81,5 +81,5 @@ ajouter:
 
 2. Utilisation:
 
-	sudo ./sendSMS "Numero de tel" "message"
-
+	`sudo ./sendSMS "Numero de tel" "message"`
+        ex `sudo ./sendSMS "0605040302" "Hello Wold"`
