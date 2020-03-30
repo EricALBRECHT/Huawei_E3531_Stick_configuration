@@ -48,7 +48,7 @@ HuaweiNewMode=1
 4. Pour basculer la clef 
 * manuellement: 
 
-	usb_modeswitch -c /etc/usb_modeswitch.d/12d1:1f01
+	`usb_modeswitch -c /etc/usb_modeswitch.d/12d1:1f01`
 
 * automatiquement a l'aide du script:
 
