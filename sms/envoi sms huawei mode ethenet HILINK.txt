@@ -1,0 +1,8 @@
+1. Configurer la clef USB Huawei 3531 en mode ethernet.
+
+telecharger sendSMS.sh, token.sh, session.sh (a conserver ensemble)
+
+2. Utilisation:
+
+sudo ./sendSMS "Numero de tel" "message"
+
