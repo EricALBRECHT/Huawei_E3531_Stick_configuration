@@ -1,4 +1,4 @@
-## Pour Rasbian/Debian : Procedure d'installation d'un Stick 3G Huawei.
+## Pour Rasbian/Debian : Procedure d'installation d'un Stick 3G Huawei en mode Internet/SMS.
 
 1. __Mise à jour.__
 
